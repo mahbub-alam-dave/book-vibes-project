@@ -1,0 +1,8 @@
+a.active {
+    color: #23BE0A;
+    /* background-color: red; */
+    border: 1px solid #23BE0A;
+    border-radius: 4px;
+    padding: 3px 6px;
+    font-weight: 600;
+}
