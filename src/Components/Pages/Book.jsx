@@ -3,7 +3,7 @@ import { Star } from 'lucide-react';
 import { Link } from 'react-router';
 
 const Book = ({book}) => {
-    const {bookId, bookName, author, image, review, totalPages, rating, category, tags, publisher, yearOfPublishing} = book
+    const {bookId, bookName, author, image, rating, category, tags} = book
     return (
         <Link to={`/books/${bookId}`}>
                 <div className='flex flex-col gap-4 border border-[rgba(19,19,19,0.15)] p-4 rounded-2xl max-w-[400px] '>

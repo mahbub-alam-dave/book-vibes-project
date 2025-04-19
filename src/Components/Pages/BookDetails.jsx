@@ -10,19 +10,15 @@ const BookDetails = () => {
 
     const allBooks = useLoaderData();
     const id = useParams().id;
-    // console.log(id)
-    // console.log(allBooks)
     const searchBook = allBooks.find(book => book.bookId === parseInt(id));
     const { bookId, bookName, author, image, review, totalPages, rating, category, tags, publisher, yearOfPublishing} = searchBook
 
 
     const handleWishlistBooks = (bookId) => {
-        console.log("wishlist btn clicked");
         addItemToWishlist(bookId);
       }
 
     const handleAddReadBooksToReadList = (bookId) => {
-        console.log("Add to Read list btn clicked")
         addToReadList(bookId)
     }
 

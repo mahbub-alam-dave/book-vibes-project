@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const Banner = () => {
     return (
         <div className='bg-[rgba(19,19,19,0.05)] rounded-2xl flex flex-col sm:flex-row justify-around items-center p-4 md:p-8 lg:p-12'>
@@ -8,7 +9,7 @@ const Banner = () => {
             <button className='btn'>View The List</button>
             </div> 
             <div>
-            <img className='w-full' src="src/assets/banner-book.png" alt="" />
+            <img className='w-full' src="banner-book.png" alt="" />
             </div>
         </div>
     );

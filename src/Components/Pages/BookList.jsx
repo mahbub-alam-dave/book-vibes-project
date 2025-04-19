@@ -1,11 +1,16 @@
 
+import { useEffect, useState } from 'react';
 import Book from './Book';
 
 
 
-const BookList = ({books}) => {
+const BookList = () => {
 
+    const [books, setBooks] = useState([])
 
+    useEffect(() =>{
+        fetch("booksData.json").then(res => res.json()).then(data => setBooks(data))
+    },[]);
 
     return (
         <div className='mt-12'>
